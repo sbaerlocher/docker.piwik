@@ -1,4 +1,4 @@
-FROM piwik
+FROM piwik:2.17.1
 
 MAINTAINER s.baerlocher@sbaerlocher.ch
 
