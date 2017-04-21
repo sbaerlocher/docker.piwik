@@ -1,4 +1,4 @@
-FROM piwik
+FROM piwik:fpm
 
 MAINTAINER s.baerlocher@sbaerlocher.ch
 
