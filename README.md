@@ -2,23 +2,25 @@
 
 ## Description
 
+Docker Conatiner from Piwik with Redis support.
+
 ## Build
 
 Build from docker file
 
-```
+```bash
 $ docker build -t sbaerlocher/piwik .
 ```
 
 Build from docker registry
 
-```
+```bash
 docker pull sbaerlocher/piwik
 ```
 
 ## run
 
-```
+```bash
 docker run --restart=always -d \
     --name piwik  \
     -h piwik.sbaerlo.ch \ 
@@ -29,18 +31,7 @@ docker run --restart=always -d \
 
 ### Options
 
-
-| Name                  | Values               | Behaviour                                                                          |
-|:---------------------:|:--------------------:|:-----------------------------------------------------------------------------------|
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-
+None
 
 #### Example:
 
@@ -60,4 +51,4 @@ This project is under the MIT License. See the [LICENSE](https://sbaerlo.ch/lice
 
 ## Copyright
 
-(c) 2016, Simon Bärlocher
+(c) 2017, Simon Bärlocher
