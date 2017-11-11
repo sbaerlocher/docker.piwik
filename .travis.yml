@@ -1,0 +1,24 @@
+---
+language: python
+python: "2.7"
+
+# Use the new container infrastructure
+sudo: false
+
+# services
+services:
+  - docker
+
+install:
+  # Check docker version
+  - docker --version
+
+  # Build Conatiner
+  - docker build -t piwik .
+
+  # Start Container
+  - docker run -d -p 127.0.0.1:80:80 --name piwik piwik
+
+script:
+  # Basic role syntax check
+  - docker ps | grep -q piwik

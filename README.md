@@ -2,24 +2,26 @@
 
 ## Description
 
+Docker Conatiner from Piwik with Redis support.
+
 ## Build
 
 Build from docker file
 
-```
+```bash
 $ docker build -t sbaerlocher/piwik .
 ```
 
 Build from docker registry
 
-```
-docker pull sbaerlocher/piwik
+```bash
+$ docker pull sbaerlocher/piwik
 ```
 
 ## run
 
-```
-docker run --restart=always -d \
+```bash
+$ docker run --restart=always -d \
     --name piwik  \
     -h piwik.sbaerlo.ch \ 
     -v /:/ \
@@ -29,26 +31,19 @@ docker run --restart=always -d \
 
 ### Options
 
-
-| Name                  | Values               | Behaviour                                                                          |
-|:---------------------:|:--------------------:|:-----------------------------------------------------------------------------------|
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-|                       |                      |                                                                                    |
-
+None
 
 #### Example:
 
-```
-docker run sbaerlocher/piwik
+```bash
+$ docker run sbaerlocher/piwik
 ```
 
 ## Changelog
+
+### 1.0
+
+Initial release
 
 ## Author
 
@@ -60,4 +55,4 @@ This project is under the MIT License. See the [LICENSE](https://sbaerlo.ch/lice
 
 ## Copyright
 
-(c) 2016, Simon Bärlocher
+(c) 2017, Simon Bärlocher
