@@ -15,13 +15,13 @@ $ docker build -t sbaerlocher/piwik .
 Build from docker registry
 
 ```bash
-docker pull sbaerlocher/piwik
+$ docker pull sbaerlocher/piwik
 ```
 
 ## run
 
 ```bash
-docker run --restart=always -d \
+$ docker run --restart=always -d \
     --name piwik  \
     -h piwik.sbaerlo.ch \ 
     -v /:/ \
@@ -35,8 +35,8 @@ None
 
 #### Example:
 
-```
-docker run sbaerlocher/piwik
+```bash
+$ docker run sbaerlocher/piwik
 ```
 
 ## Changelog
