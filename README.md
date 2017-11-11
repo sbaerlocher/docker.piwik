@@ -41,6 +41,10 @@ $ docker run sbaerlocher/piwik
 
 ## Changelog
 
+### 1.0
+
+Initial release
+
 ## Author
 
 * [Simon Bärlocher](https://sbaerlocher.ch)
