@@ -1,54 +1,13 @@
-# Docker Images: Piwik
+# Docker Images: Piwik [DEPRECATED]
 
 ## Description
 
-Docker Conatiner from Piwik with Redis support.
-
-## Build
-
-Build from docker file
-
-```bash
-$ docker build -t sbaerlocher/piwik .
-```
-
-Build from docker registry
-
-```bash
-$ docker pull sbaerlocher/piwik
-```
-
-## run
-
-```bash
-$ docker run --restart=always -d \
-    --name piwik  \
-    -h piwik.sbaerlo.ch \ 
-    -v /:/ \
-    -p : \
-    sbaerlocher/piwik
-```
-
-### Options
-
-None
-
-#### Example:
-
-```bash
-$ docker run sbaerlocher/piwik
-```
-
-## Changelog
-
-### 1.0
-
-Initial release
+phpredis support has now been added to the Official Container. This container is therefore superfluous. Details on https://github.com/piwik/docker-piwik/pull/75
 
 ## Author
 
 * [Simon Bärlocher](https://sbaerlocher.ch)
- 
+
 ## License
 
 This project is under the MIT License. See the [LICENSE](https://sbaerlo.ch/licence) file for the full license text.
